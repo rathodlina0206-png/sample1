@@ -1,9 +1,9 @@
 - name: this is my first playbook
   hosts: all
   tasks:
-    - name: print employee name
+    - name: print employee 
       debug:
         msg: "Lina Rathod"
     - name: print another employee
       debug:
-        msg" "Ishu Pawar"
+        msg: "Ishu Pawar"
