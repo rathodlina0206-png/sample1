@@ -1,0 +1,14 @@
+- name: This is variable learning
+  hosts: all
+  vars:
+    employee: "lina"
+  tasks:
+  - name: print employee 1
+    debug:
+      msg: "{{employee}}"
+  - name: print employee 2
+    debuge:
+      msg: "{{employee}}"
+  - name: print employee 3
+    debuge:
+      msg: "ishu"
