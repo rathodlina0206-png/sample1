@@ -7,8 +7,8 @@
     debug:
       msg: "{{employee}}"
   - name: print employee 2
-    debuge:
+    debug:
       msg: "{{employee}}"
   - name: print employee 3
-    debuge:
+    debug:
       msg: "ishu"
