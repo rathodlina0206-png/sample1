@@ -2,6 +2,14 @@
   hosts: all
   become: true
   tasks:
+    - name: update
+      shell:
+        cmd: apt-get update
+    - name: install httpd
+      yum:
+        name: httpd
+        state: latest
+      ignore_errors: true
     - name: install apache2
       apt:
         name: apache2
