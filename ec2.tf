@@ -3,7 +3,7 @@ terraform {
     bucket = "lina-123"
     region = "us-east-1"
     key = "tfstate"
-    dynamodb_table = "terraform-lock-tablegit"
+    dynamodb_table = "terraform-lock-table"
   }
 }
 
