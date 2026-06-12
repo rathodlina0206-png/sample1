@@ -1,4 +1,22 @@
 - name: package installation 
-  tasks:
+  hosts:
   become: true
-  
+  tasks:
+    - name: install httpd
+      package:
+        name: httpd 
+        state: latest
+      when: ansible_os_family == "RedHat"
+
+    - name: install apache2
+      package:
+        name: apache2
+        state: latest
+      when: ansible_os_family == "Debian"
+
+    - name: start service
+      systemd:
+        name: apache2
+        state: started
+        enabled: true
+        
