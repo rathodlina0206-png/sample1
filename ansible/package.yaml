@@ -1,5 +1,5 @@
 - name: package installation 
-  hosts:
+  hosts: all
   become: true
   tasks:
     - name: install httpd
@@ -19,4 +19,3 @@
         name: apache2
         state: started
         enabled: true
-        
