@@ -1,6 +1,6 @@
 FROM ubuntu:20.04
 RUN apt-get update
 RUN apt-get install apache2 -y
-COPY index.html /use/local/apache2/htdocs/index.html
+COPY index.html /usr/local/apache2/htdocs/index.html
 EXPOSE 80
-CMD [ "apache2ctl" "-D" "FOREGROUND" ]
+CMD [ "apache2ctl","-D","FOREGROUND" ]
